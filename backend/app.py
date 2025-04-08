@@ -1,5 +1,7 @@
 import os
 import openai
+from dotenv import load_dotenv
+load_dotenv()
 from textblob import TextBlob
 from flask import Flask, request, jsonify
 from flask_cors import CORS

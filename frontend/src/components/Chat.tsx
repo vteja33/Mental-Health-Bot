@@ -47,11 +47,13 @@ const Chat: React.FC = () => {
     setInput('');
 
     try {
-      const response = await fetch('http://127.0.0.1:5000/chat', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ message: input }),
-      });
+        const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/chat`, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ message: input }),
+          });          
 
       const data = await response.json();
       const botMsg: Message = {

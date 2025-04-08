@@ -1,0 +1,62 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.chat-window {
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px;
+  background: #f7f7f7;
+}
+
+.user-message {
+  text-align: right;
+  background-color: #cce5ff;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.bot-message {
+  text-align: left;
+  background-color: #e2e3e5;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.input-area {
+  display: flex;
+  padding: 10px;
+  background: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.input-area input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.input-area button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.input-area button:hover {
+  background: #0056b3;
+}
